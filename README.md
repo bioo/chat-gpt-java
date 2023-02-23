@@ -27,9 +27,9 @@ chatGPT-Java
 2. `POST` `/chat/question`接口说明：对话
    headers(请求头):
     - content-type 请求类型为 `application/json`
-    - sessionId 服务端自动生成返回的（非必须，与cookie二则存一即可）
+    - sessionId 服务端自动生成返回的（非必须，与cookie二者存一即可）
     cookie
-    - sessionId 服务端自动生成返回的（非必须，与headers二则存一即可，如果使用cookie，需要客户端支持cookie）
+    - sessionId 服务端自动生成返回的（非必须，与headers二者存一即可，如果使用cookie，需要客户端支持cookie）
 
    body(请求体):
     - question 问题，字符串类型。必填
@@ -44,5 +44,5 @@ chatGPT-Java
     
       ![image](./pic/1677119251153.jpg)
 5. 其他注意事项
-   - 本项目未使用用持久化策略，可自行实现
+   - 项目未使用持久化策略，可自行实现
 
