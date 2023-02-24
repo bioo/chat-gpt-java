@@ -16,10 +16,6 @@ logging:
 
 # open-ai 配置
 open-ai:
-  # 有多少写多少
-  tokens:
-    - sk-xxxx
-    - sk-xxxx
   # 超时时间
   time_out_seconds: 60
   chat_GPT:

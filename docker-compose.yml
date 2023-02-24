@@ -1,0 +1,21 @@
+version: "3"
+services:
+  # 指定容器服务,下面可配多个服务
+  chat-gpt-java:
+    # 指定构建目录,可以使用相对路径
+    build: .
+    # 跟在build后面,指定构建镜像的名字
+    image: chat-gpt-java:latest
+    # 指定容器名称
+    container_name: chat-gpt-java
+    # 重启机制
+    # restart: always
+    volumes:
+      - ./logs:/var/logs/chat
+      - ./conf:/opt/chat-gpt-java/conf
+    # 访问端口
+    ports:
+      - "8080:8080"
+    environment:
+      # 指定时区
+      - TZ="Asia/Shanghai"

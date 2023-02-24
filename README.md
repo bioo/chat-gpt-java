@@ -21,9 +21,11 @@ chatGPT-Java
 
 #### 使用说明
 
-1. 所有配置`API KEY`在`application.yml` 文件中。
+1. 所有配置`API KEY`在`api-key.conf` 文件中（每个apiKey用一行）。
    - 如图所示
-     ![image](./pic/1677119526310.jpg)
+      
+     ![image](./pic/1677206582492.jpg)
+     ![image](./pic/1677206725578.jpg)
 2. `POST` `/chat/question`接口说明：对话
    headers(请求头):
     - content-type 请求类型为 `application/json`
