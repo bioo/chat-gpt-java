@@ -17,15 +17,11 @@ logging:
 # open-ai 配置
 open-ai:
   # 超时时间
-  time_out_seconds: 60
+  timeout_seconds: 60
   chat_GPT:
-    # 模型的 ID https://beta.openai.com/docs/api-reference/models/list
-    model: text-davinci-003
     # 使用什么采样温度。较高的值意味着模型将承担更多风险。为更有创意的应用程序尝试 0.8，为具有明确答案的应用程序尝试 0（argmax 采样）。
     temperature: 0.8
     # 要生成的最大字符数
     max_token: 2048
     # 一种替代温度采样的方法，称为核采样
     top_p: 1.0
-    # 是否回显问题，即响应中是否包含问题
-    echo: false

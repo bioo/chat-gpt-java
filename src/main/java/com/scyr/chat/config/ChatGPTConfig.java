@@ -5,14 +5,12 @@ import lombok.Data;
 @Data
 public class ChatGPTConfig {
 
-    private String model;
+    private String model = "gpt-3.5-turbo";
 
     private Double temperature;
 
     private Integer maxToken;
 
     private Double topP;
-
-    private Boolean echo;
 
 }

@@ -6,7 +6,7 @@ chatGPT-Java
 #### 技术栈
 1. Java 17
 2. Maven
-3. SpringBoot 3.0.2
+3. SpringBoot 3.0.3
 
 #### 介绍
 

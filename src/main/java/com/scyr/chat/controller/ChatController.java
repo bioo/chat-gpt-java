@@ -37,7 +37,7 @@ public class ChatController extends BaseController {
     public Result<Map<String, Object>> cache() {
         Map<String, Object> map = new HashMap<>();
         map.put("open_ai_service_info_map", Cache.OPEN_AI_SERVICE_INFO_MAP);
-        map.put("prompt_context_map", Cache.PROMPT_CONTEXT_MAP);
+        map.put("question_context_map", Cache.QUESTION_CONTEXT_MAP);
         map.put("session_active_map", Cache.SESSION_ACTIVE_MAP);
         return Result.success(map);
     }

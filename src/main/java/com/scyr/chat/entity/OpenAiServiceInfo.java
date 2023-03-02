@@ -2,13 +2,12 @@ package com.scyr.chat.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.scyr.chat.cache.Cache;
-import com.theokanning.openai.OpenAiService;
+import com.scyr.chat.openai.OpenAiService;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.apache.commons.lang3.StringUtils;
-import org.jetbrains.annotations.NotNull;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -76,7 +75,7 @@ public class OpenAiServiceInfo implements Comparable<OpenAiServiceInfo> {
     }
 
     @Override
-    public int compareTo(@NotNull OpenAiServiceInfo o) {
+    public int compareTo(OpenAiServiceInfo o) {
         // 升序
         return this.getUseAmount() - o.getUseAmount();
     }
